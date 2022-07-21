@@ -1,0 +1,2 @@
+# Android_ScreenRecorder_WinGUI
+WindowsPCからAndroidの画面を録画するだけのソフト
