@@ -13,7 +13,8 @@ baseGround.resizable(width = False, height = False)
 
 def btn_click_start():
     import subprocess
-    cmd = ('adb', 'shell', 'screenrecord', 'package', 'install-existing', 'jp.co.nttdocomo.bridgelauncher')
+    cmd = ('adb', 'shell', 'screenrecord', '/sdcard/Rec.mp4')
+    cmd = ('adb', 'pull', '/sdcard/Rec.mp4 ~/Desktop/sdcard/Rec.mp4: 1 file pulled, 0 skipped. 26.7 MB/s (22255200 bytes in 0.795s)')
     subprocess.call(cmd)
 
 def btn_click_adb():
